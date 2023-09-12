@@ -2,5 +2,5 @@ class Anagram:
     def __init__(self, word):
         self.word = word
 
-    def match(self, candidates):
-        return [candidate for candidate in candidates if sorted(candidate.lower()) == sorted(self.word.lower()) and candidate.lower() != self.word.lower()]
+    def match(self, strings):
+        return [strings for strings in strings if sorted(strings.lower()) == sorted(self.word.lower()) and strings.lower() != self.word.lower()]
